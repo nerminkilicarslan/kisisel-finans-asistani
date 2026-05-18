@@ -1,0 +1,40 @@
+# Ortam & gizli bilgiler
+.env
+*.env
+
+# Firebase servis hesabı anahtarı (gizli)
+*firebase-adminsdk*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Sanal ortam
+venv/
+.venv/
+env/
+
+# Veritabanı (kullanıcıya özgü veri)
+data/
+
+# ML modelleri (büyük ikili dosyalar — yeniden eğitilebilir)
+models_ml/
+
+# Streamlit önbellek
+.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store

@@ -73,6 +73,7 @@ if fb_ready:
         alerts = check_budget_alerts(db, month, year)
         db.close()
 else:
+    sel_period = "Son 6 Ay"
     db = SessionLocal()
     summary = get_monthly_summary(db, month, year)
     breakdown = get_category_breakdown(db, month, year)

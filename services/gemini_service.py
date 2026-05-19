@@ -16,8 +16,8 @@ def _get_model():
         return None
     if api_key != _configured_key:
         genai.configure(api_key=api_key)
-        # gemini-2.0-flash kullan - stabil ve erişilebilir model
-        _model = genai.GenerativeModel("gemini-2.0-flash")
+        # gemini-2.5-flash kullan - en son ve güçlü model
+        _model = genai.GenerativeModel("gemini-2.5-flash")
         _configured_key = api_key
     return _model
 
